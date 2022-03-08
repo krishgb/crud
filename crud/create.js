@@ -1,8 +1,8 @@
-import express from "express"
+import {Router} from "express"
 import {filterUser, createUser} from '../utils/index.js'
 const DATA_FILE = 'data.json'
 
-export default express.Router()
+export default Router()
 .post('/', (req, res) => {
 
     const data = req.body

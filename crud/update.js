@@ -1,8 +1,8 @@
-import express from "express"
+import {Router} from "express"
 import {updateUser} from '../utils/index.js'
 const DATA_FILE = 'data.json'
 
-export default express.Router()
+export default Router()
 .patch('/:id', (req, res) => {
     const id = parseInt(req.params.id)
     const userData = req.body

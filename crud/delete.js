@@ -1,8 +1,8 @@
-import express from "express"
+import {Router} from "express"
 import {deleteUser} from '../utils/index.js'
 const DATA_FILE = 'data.json'
 
-export default express.Router()
+export default Router()
 .delete('/:id', (req, res) => {
     const id = parseInt(req.params.id)
     const {user, success} = deleteUser(id, DATA_FILE)

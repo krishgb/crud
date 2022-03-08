@@ -1,7 +1,7 @@
-import express from "express"
+import {Router} from "express"
 import {readData, filterUser} from '../utils/index.js'
 
-const router = express.Router()
+const router = Router()
 
 const DATA_FILE = 'data.json'
 
